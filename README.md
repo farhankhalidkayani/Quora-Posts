@@ -67,6 +67,10 @@ Make sure you have the following installed on your system:
 .
 ├── public              # Static assets (CSS, images, etc.)
 │   └── style.css       # Custom styles for the app
+│   └── form.css       # Custom styles for the app
+│   └── post.css       # Custom styles for the app
+│   └── edit.css       # Custom styles for the app
+│   └── 404.css       # Custom styles for the app
 ├── views               # EJS templates
 │   ├── index.ejs       # Home page (lists all posts)
 │   ├── form.ejs        # Form for creating a new post
