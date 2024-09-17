@@ -26,4 +26,12 @@ let posts = [
 app.get("/posts", (req, res) => {
   res.render("index.ejs", { posts });
 });
+app.get("/posts/new", (req, res) => {
+  res.render("form.ejs");
+});
+app.post("/posts", (req, res) => {
+  const { username, content } = req.body;
+  posts.push({ username, content });
+  res.redirect("/posts");
+});
 app.listen(3000);
