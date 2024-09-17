@@ -90,22 +90,6 @@ Make sure you have the following installed on your system:
 | PATCH  | `/posts/:id`       | Update an existing post       |
 | DELETE | `/posts/:id`       | Delete a post                 |
 
-## Screenshots
-
-### Home Page (All Posts)
-![Home Page](./screenshots/home.png)
-
-### Post Details
-![Post Details](./screenshots/post-details.png)
-
-### Add New Post
-![Add Post](./screenshots/add-post.png)
-
-## Future Improvements
-
-- Connect to a database (e.g., MongoDB) for persistent storage
-- Add user authentication for secured access to post actions
-- Implement user-specific features like upvoting and commenting
 
 ## Contributing
 
