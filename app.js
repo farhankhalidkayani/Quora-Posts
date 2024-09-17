@@ -4,11 +4,26 @@ const path = require("path");
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
-app.set(express.static("public"));
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
-app.set(express.json());
+app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Server Working");
+let posts = [
+  {
+    username: "Farhan",
+    content: "I am Learning Backend Development with JavaScript",
+  },
+  {
+    username: "Mithu",
+    content: "I am Learning Backend Development with Python",
+  },
+  {
+    username: "Zohaib",
+    content: "I am Learning Frontent Development with ReactJs",
+  },
+];
+
+app.get("/posts", (req, res) => {
+  res.render("index.ejs", { posts });
 });
 app.listen(3000);
