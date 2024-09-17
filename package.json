@@ -1,0 +1,26 @@
+{
+  "name": "quora-posts",
+  "version": "1.0.0",
+  "description": "Basic quora clone with basic REST API's Knowledge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhankhalidkayani/Quora-Posts.git"
+  },
+  "author": "Farhan Khalid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/farhankhalidkayani/Quora-Posts/issues"
+  },
+  "homepage": "https://github.com/farhankhalidkayani/Quora-Posts#readme",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
