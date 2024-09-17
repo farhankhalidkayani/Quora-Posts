@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add new post</title>
+    <title>Add New Post</title>
+    <link rel="stylesheet" href="/form.css" />
   </head>
   <body>
-    <head>
-      <h1>Add New Post</h1>
-    </head>
     <main>
+      <h1>Add New Post</h1>
       <form action="/posts" method="POST">
         <label for="username">Username</label>
-        <input type="text" name="username" id="username" />
-        <label for="content">Enter Post content</label>
-        <textarea name="content" id="content"></textarea>
-        <input type="submit" />
+        <input type="text" name="username" id="username" required />
+
+        <label for="content">Enter Post Content</label>
+        <textarea name="content" id="content" required></textarea>
+
+        <input type="submit" value="Create Post" />
       </form>
     </main>
   </body>

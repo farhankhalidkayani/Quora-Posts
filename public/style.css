@@ -1,9 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 h1 {
-  color: maroon;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
 }
+
+main {
+  width: 90%;
+  max-width: 800px;
+}
+
 .post {
-  background-color: blanchedalmond;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.user {
-  font-style: italic;
+
+.post h3.user {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ff6b6b;
+}
+
+.post h4.content {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.post button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.post button:hover {
+  background-color: #ff4c4c;
+}
+
+.post button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.post form {
+  display: inline;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button.create {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+button.create:hover {
+  background-color: #555;
+}
+
+button.create a {
+  font-weight: bold;
 }

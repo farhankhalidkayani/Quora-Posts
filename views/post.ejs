@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post</title>
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/post.css" />
   </head>
   <body>
-    <h1>Here is your post in detail</h1>
-    <h2>Username: @<%= post.username %></h1>
-    <h3>Post ID: <%= post.id %></h2>
-    <h4>Post Content: <%= post.content %></h3>
+    <div class="post-container">
+      <h1>Post Details</h1>
+      <h2>Username: @<%= post.username %></h2>
+      <h3>Post ID: <%= post.id %></h3>
+      <h4>Post Content: <%= post.content %></h4>
+      <button><a href="/posts">Back to HomePage</a></button>
+    </div>
   </body>
 </html>
